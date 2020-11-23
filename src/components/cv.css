@@ -1,0 +1,100 @@
+.left-nav {
+    display: flex;
+}
+
+aside {
+    width: 10%;
+    background-color: white;
+    position: relative;
+}
+main {
+    flex: 1;
+    overflow: auto;
+}
+
+.name {
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.name, nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.name p {
+    font-size: 20px;
+}
+
+.nav_aside div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #F5F5F5;
+    
+    
+
+}
+.visible{
+    display: block;
+}
+aside {
+    display: none;
+}
+
+nav div:hover {
+    background-color: #FCFCFC;
+}
+main {
+    background-color: #F5F5F5;
+}
+.contact_nav{
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.nav_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.nav_mobile div{
+    margin-top: 5px;
+    padding: 0px;
+}
+.burger_menu{
+    font-size: 50px;
+}
+a {
+    text-decoration: none;
+    color: "black";
+}
+
+a:link {
+    color: black;
+  }
+  
+a:visited {
+    color: black;
+}
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {}
+ 
+
+@media screen and (min-width: 1200px) {
+
+	.nav_mobile{
+        display: none;
+    }
+
+    aside{
+        display: block;
+    }
+
+
+}
+
