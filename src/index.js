@@ -5,14 +5,14 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import configureStore from "./redux/configureStore";
-import Resume from "./components/Resume;";
+import Cv from "./components/Cv";
 
 const store = configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Resume />
+      <Cv />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

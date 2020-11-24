@@ -1,5 +1,4 @@
 import React from "react";
-//import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import BlockTimeline from "./BlockTimeline";
 import CodingSkills from "./CodingSkills";
@@ -7,11 +6,11 @@ import Title from "./Title";
 
 import "./resume.css";
 
-import { requestData } from "../../redux/actions/pokeActions";
+import { requestData } from "../redux/actions/dataActions";
 
 //de que se ahce destructuring
 function Resume({ data, dispatch }) {
-  if (!data && !data?.length) {
+  if (!data?.length) {
     dispatch(requestData());
   }
 
@@ -92,12 +91,5 @@ function mapStateToProps({ dataReducer }) {
     data: dataReducer.data,
   };
 }
-/*
-function mapDispatchToProps(dispatch) {
-	return {
-		actions: bindActionCreators({ createRandomVariable }, dispatch),
-		dispatch
-	};
-}*/
 
 export default connect(mapStateToProps)(Resume);
